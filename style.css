@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px #eee;
+  padding-bottom: 10px;
+}
+.logo {
+  display: block;
+  margin: 20px auto 10px auto;
+  width: 200px;
+  max-width: 80vw;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px 0 0 0;
+  flex-wrap: wrap;
+}
+nav a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: color 0.2s;
+  padding: 6px 10px;
+}
+nav a:hover {
+  color: #b82b2b;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 0 0 30px 0;
+  margin-bottom: 30px;
+}
+.hero-img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #e0e0e0;
+  margin: 24px 0 10px 0;
+}
+.hero-text {
+  text-align: center;
+  padding: 0 10px;
+}
+.hero-text h1 {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  color: #b82b2b;
+}
+.hero-text p {
+  font-size: 1.15em;
+  color: #444;
+}
+section {
+  max-width: 900px;
+  margin: 30px auto 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+  padding: 32px 18px;
+}
+section h2 {
+  color: #b82b2b;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.4em;
+}
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+.menu-list li {
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  font-size: 1.08em;
+}
+.menu-note {
+  margin-top: 16px;
+  color: #888;
+}
+.space-gallery {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.space-gallery img {
+  width: 260px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #e0e0e0;
+  margin-bottom: 12px;
+}
+.contact-info p {
+  font-size: 1.07em;
+  margin: 8px 0;
+}
+.contact-info a {
+  color: #b82b2b;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 700px) {
+  .hero-img, .space-gallery img { width: 98vw; max-width: 400px; height: auto; }
+  section { padding: 16px 2vw; }
+  nav { gap: 12px; }
+  .space-gallery { flex-direction: column; align-items: center; }
+}
